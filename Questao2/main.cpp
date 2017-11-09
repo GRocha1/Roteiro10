@@ -49,7 +49,7 @@ int main(){
     cin>>valor;
     SaldoNaoDisponivelException e = SaldoNaoDisponivelException(conta.getSaldo(), valor);
     try{
-    conta.sacar(valor);
+        conta.sacar(valor);
     }
     catch(SaldoNaoDisponivelException e){
         cout << "Nao eh possivel realizar o saque" << endl
